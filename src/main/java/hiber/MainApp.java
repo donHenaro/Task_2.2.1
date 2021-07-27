@@ -3,8 +3,6 @@ package hiber;
 import hiber.config.AppConfig;
 import hiber.model.*;
 import hiber.service.UserService;
-import org.hibernate.SessionFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.sql.SQLException;
