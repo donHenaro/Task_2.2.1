@@ -20,39 +20,8 @@ public class User {
    @JoinColumn(name = "id")
    private Car car;
 
-   public Long getId() {
-      return id;
-   }
-   public void setId(Long id) {
-      this.id = id;
-   }
-
-   public String getFirstName() {
-      return firstName;
-   }
-   public void setFirstName(String firstName) {
-      this.firstName = firstName;
-   }
-
-   public String getLastName() {
-      return lastName;
-   }
-   public void setLastName(String lastName) {
-      this.lastName = lastName;
-   }
-
-   public String getEmail() {
-      return email;
-   }
-   public void setEmail(String email) {
-      this.email = email;
-   }
-
    public Car getCar() {
       return car;
-   }
-   public void setCar(Car car) {
-      this.car = car;
    }
 
    public User() {}
@@ -66,7 +35,6 @@ public class User {
 
    @Override
    public String toString() {
-      String ret = String.format("[Id] Name = [%d] %s %s \nEmail = %s \nCar = %s", id, firstName, lastName, email, getCar());
-      return ret;
+      return String.format("[Id] Name = [%d] %s %s \nEmail = %s \nCar = %s\n-------------------", id, firstName, lastName, email, getCar());
    }
 }

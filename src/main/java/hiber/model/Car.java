@@ -31,9 +31,6 @@ public class Car {
 
     @Override
     public String toString() {
-        return "{car_id=" + car_id +
-                ", model='" + model + '\'' +
-                ", series=" + series +
-                '}';
+        return String.format("{[id] модель = [%d] %s, серия = %d}", car_id, model, series);
     }
 }
